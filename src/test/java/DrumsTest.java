@@ -17,4 +17,9 @@ public class DrumsTest {
     public void hasPrice() {
         assertEquals(200.00, drums.getPrice(), 0.01);
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Bootz catz bootz cats", drums.play());
+    }
 }
