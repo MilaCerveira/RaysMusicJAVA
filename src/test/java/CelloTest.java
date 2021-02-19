@@ -2,6 +2,7 @@ import instruments.Cello;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class CelloTest {
@@ -13,8 +14,13 @@ public class CelloTest {
     }
 
     @Test
-    public void hasPrice(){
+    public void hasPrice() {
         assertEquals(250.00, cello.getPrice(), 0.01);
 
     }
+    @Test
+    public void canPlay(){
+        assertEquals("Yeet Yeet", cello.play());
+    }
+
 }
