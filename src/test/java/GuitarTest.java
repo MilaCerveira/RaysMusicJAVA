@@ -16,4 +16,9 @@ public class GuitarTest {
     public void hasPrice() {
         assertEquals(400.00, guitar.getPrice(), 0.1);
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("clang alang lang lang lang clang alang lang lang", guitar.play());
+    }
 }
