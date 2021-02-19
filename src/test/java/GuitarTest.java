@@ -9,7 +9,7 @@ public class GuitarTest {
 
     @Before
     public void setup() {
-        guitar = new Guitar(400.00);
+        guitar = new Guitar(400.00, 6);
     }
 
     @Test
@@ -18,7 +18,12 @@ public class GuitarTest {
     }
 
     @Test
-    public void canPlay(){
+    public void canPlay() {
         assertEquals("clang alang lang lang lang clang alang lang lang", guitar.play());
+    }
+
+    @Test
+    public  void hasStrings(){
+        assertEquals(6, guitar.getStrings() );
     }
 }
