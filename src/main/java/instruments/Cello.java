@@ -1,8 +1,8 @@
 package instruments;
 
 public class Cello extends Instrument {
-    public Cello(double price) {
-        super(price);
+    public Cello(double price, String material) {
+        super(price, material);
     }
 
     @Override

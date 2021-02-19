@@ -1,8 +1,8 @@
 package instruments;
 
 public class Piano extends Instrument{
-    public Piano(double price) {
-        super(price);
+    public Piano(double price, String material) {
+        super(price, material);
     }
 
     @Override

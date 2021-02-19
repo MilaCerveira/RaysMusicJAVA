@@ -9,7 +9,7 @@ public class PianoTest {
 
     @Before
     public void setup() {
-        piano = new Piano(25000.00);
+        piano = new Piano(25000.00, "beech");
     }
 
     @Test

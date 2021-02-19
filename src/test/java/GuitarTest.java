@@ -9,7 +9,7 @@ public class GuitarTest {
 
     @Before
     public void setup() {
-        guitar = new Guitar(400.00, 6);
+        guitar = new Guitar(400.00, "mahogany", 6);
     }
 
     @Test

@@ -10,7 +10,7 @@ public class DrumsTest {
 
     @Before
     public void setUp() {
-        drums = new Drums(200.00);
+        drums = new Drums(200.00, "brass");
     }
 
     @Test

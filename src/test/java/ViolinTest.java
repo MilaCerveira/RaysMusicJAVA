@@ -9,7 +9,7 @@ public class ViolinTest {
 
     @Before
     public void setUp() {
-        violin = new Violin(45000.00);
+        violin = new Violin(45000.00, "maple");
     }
 
     @Test

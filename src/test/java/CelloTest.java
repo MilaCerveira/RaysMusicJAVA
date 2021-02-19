@@ -10,7 +10,7 @@ public class CelloTest {
 
     @Before
     public void setUp() {
-        cello = new Cello(250.00);
+        cello = new Cello(250.00, "maple");
     }
 
     @Test
