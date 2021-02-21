@@ -9,12 +9,17 @@ public class GuitarTest {
 
     @Before
     public void setup() {
-        guitar = new Guitar(400.00, 500,"mahogany", 6);
+        guitar = new Guitar(400.00, 500.00, "mahogany", 6);
     }
 
     @Test
     public void hasBuyingPrice() {
         assertEquals(400.00, guitar.getBuyingPrice(), 0.1);
+    }
+
+    @Test
+    public void hasSellingPrice() {
+        assertEquals(500.00, guitar.getSellingPrice(), 01);
     }
 
     @Test

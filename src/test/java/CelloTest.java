@@ -11,7 +11,7 @@ public class CelloTest {
 
     @Before
     public void setUp() {
-        cello = new Cello(250.00, "maple",300.00, 4);
+        cello = new Cello(250.00, "maple", 300.00, 4);
     }
 
     @Test
@@ -19,14 +19,17 @@ public class CelloTest {
         assertEquals(250.00, cello.getBuyingPrice(), 0.01);
 
     }
-    @Test
-    public void hasSellingPrice(){
-        assertEquals(400.00, cello.getSellingPrice(), 0.01);
-    }
 
     @Test
-    public void canPlay() {
-        assertEquals("Yeet Yeet", cello.play());
-    }
+    public void hasSellingPrice() {
+        assertEquals(300.00, cello.getSellingPrice(), 0.01);
 
-}
+
+        }
+
+        @Test
+        public void canPlay () {
+            assertEquals("Yeet Yeet", cello.play());
+        }
+
+    }
