@@ -19,7 +19,7 @@ public class DrumsTest {
     }
 
     @Test
-    public void canPlay(){
+    public void canPlay() {
         assertEquals("Bootz catz bootz cats", drums.play());
     }
 }

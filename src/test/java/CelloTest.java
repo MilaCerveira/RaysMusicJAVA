@@ -10,7 +10,7 @@ public class CelloTest {
 
     @Before
     public void setUp() {
-        cello = new Cello(250.00, "maple");
+        cello = new Cello(250.00, "maple", 400.00);
     }
 
     @Test
@@ -18,8 +18,9 @@ public class CelloTest {
         assertEquals(250.00, cello.getPrice(), 0.01);
 
     }
+
     @Test
-    public void canPlay(){
+    public void canPlay() {
         assertEquals("Yeet Yeet", cello.play());
     }
 

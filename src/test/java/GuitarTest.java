@@ -23,7 +23,7 @@ public class GuitarTest {
     }
 
     @Test
-    public  void hasStrings(){
-        assertEquals(6, guitar.getStrings() );
+    public void hasStrings() {
+        assertEquals(6, guitar.getStrings());
     }
 }

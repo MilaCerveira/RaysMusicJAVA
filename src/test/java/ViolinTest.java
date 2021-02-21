@@ -9,15 +9,16 @@ public class ViolinTest {
 
     @Before
     public void setUp() {
-        violin = new Violin(45000.00, "maple");
+        violin = new Violin(45000.00, "maple", 4, 4);
     }
 
     @Test
     public void hasPrice() {
         assertEquals(45000.00, violin.getPrice(), 0.1);
     }
+
     @Test
-    public void canPlay(){
+    public void canPlay() {
         assertEquals("Screech screech", violin.play());
     }
 
