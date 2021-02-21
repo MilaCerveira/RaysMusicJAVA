@@ -32,3 +32,4 @@ public class PianoTest {
         assertEquals(52, piano.getKeys());
     }
 }
+

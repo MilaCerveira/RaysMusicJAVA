@@ -25,11 +25,11 @@ public class CelloTest {
         assertEquals(300.00, cello.getSellingPrice(), 0.01);
 
 
-        }
-
-        @Test
-        public void canPlay () {
-            assertEquals("Yeet Yeet", cello.play());
-        }
-
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Yeet Yeet", cello.play());
+    }
+
+}

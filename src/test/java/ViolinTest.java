@@ -17,8 +17,12 @@ public class ViolinTest {
     public void hasBuyingPrice() {
         assertEquals(45000.00, violin.getBuyingPrice(), 0.1);
     }
+
     @Test
-    public void hasSellingPrice(){assertEquals(50000.00, violin.getSellingPrice(), 0.1);}
+    public void hasSellingPrice() {
+        assertEquals(50000.00, violin.getSellingPrice(), 0.1);
+    }
+
     @Test
     public void canPlay() {
         assertEquals("Screech screech", violin.play());
