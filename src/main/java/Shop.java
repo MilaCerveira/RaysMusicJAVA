@@ -7,10 +7,11 @@ public class Shop {
 
     private List<ISell> items = new ArrayList<>();
 
-    public void addItem(ISell item){
+    public void addItem(ISell item) {
         items.add(item);
     }
-    public void removeItem(int index){
+
+    public void removeItem(int index) {
         items.remove(index);
     }
 }
