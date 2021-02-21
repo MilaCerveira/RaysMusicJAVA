@@ -2,7 +2,7 @@ package instruments;
 
 public class Drums extends Instrument {
     public Drums(double buyingPrice, double sellingPrice, String material) {
-        super(buyingPrice, material, sellingPrice);
+        super(buyingPrice, material, sellingPrice, InstrumentType.PERCUSSION);
     }
 
     @Override

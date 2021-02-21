@@ -1,5 +1,6 @@
 import instruments.Cello;
 
+import instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,13 +11,17 @@ public class CelloTest {
 
     @Before
     public void setUp() {
-        cello = new Cello(250.00, "maple", 400.00);
+        cello = new Cello(250.00, "maple",300.00, 4);
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(250.00, cello.getPrice(), 0.01);
+    public void hasBuyingPrice() {
+        assertEquals(250.00, cello.getBuyingPrice(), 0.01);
 
+    }
+    @Test
+    public void hasSellingPrice(){
+        assertEquals(400.00, cello.getSellingPrice(), 0.01);
     }
 
     @Test

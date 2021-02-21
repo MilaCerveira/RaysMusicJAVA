@@ -1,3 +1,4 @@
+import instruments.InstrumentType;
 import instruments.Violin;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,12 +10,12 @@ public class ViolinTest {
 
     @Before
     public void setUp() {
-        violin = new Violin(45000.00, "maple", 4, 4);
+        violin = new Violin(45000.00, 50000.00, "amber", 4, 4);
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(45000.00, violin.getPrice(), 0.1);
+    public void hasBuyingPrice() {
+        assertEquals(45000.00, violin.getBuyingPrice(), 0.1);
     }
 
     @Test

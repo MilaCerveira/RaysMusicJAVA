@@ -7,12 +7,15 @@ public abstract class Instrument implements IPlay, ISell {
     private double buyingPrice;
     private String material;
     private double sellingPrice;
+    private InstrumentType instrumentType;
 
 
-    public Instrument(double buyingPrice, String material, double sellingPrice) {
+
+    public Instrument(double buyingPrice, String material, double sellingPrice,InstrumentType instrumentType ) {
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
         this.material = material;
+        this.instrumentType = instrumentType;
     }
 
 

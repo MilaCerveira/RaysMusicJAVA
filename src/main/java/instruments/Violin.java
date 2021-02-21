@@ -5,7 +5,7 @@ public class Violin extends Instrument {
     private int strings;
 
     public Violin(double buyingPrice, double sellingPrice, String material, int pegs, int strings) {
-        super( buyingPrice, material, sellingPrice);
+        super( buyingPrice, material, sellingPrice, InstrumentType.STRING);
         this.pegs = pegs;
         this.strings = strings;
     }

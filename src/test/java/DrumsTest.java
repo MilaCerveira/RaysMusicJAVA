@@ -10,12 +10,12 @@ public class DrumsTest {
 
     @Before
     public void setUp() {
-        drums = new Drums(200.00, "brass");
+        drums = new Drums(200.00, 250.00, "brass");
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(200.00, drums.getPrice(), 0.01);
+    public void hasBuyingPrice() {
+        assertEquals(200.00, drums.getBuyingPrice(), 0.01);
     }
 
     @Test

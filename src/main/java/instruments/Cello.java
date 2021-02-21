@@ -4,7 +4,7 @@ public class Cello extends Instrument {
     private int strings;
 
     public Cello(double buyingPrice, String material, double sellingPrice, int strings) {
-        super(buyingPrice, material, sellingPrice);
+        super(buyingPrice, material, sellingPrice, InstrumentType.STRING);
         this.strings = strings;
     }
 

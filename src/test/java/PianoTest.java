@@ -9,12 +9,12 @@ public class PianoTest {
 
     @Before
     public void setup() {
-        piano = new Piano(25000.00, "beech", 52);
+        piano = new Piano(25000.00, 30000.00,"beech", 52);
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(25000.00, piano.getPrice(), 0.1);
+    public void hasBuyingPrice() {
+        assertEquals(25000.00, piano.getBuyingPrice(), 0.1);
     }
 
     @Test
